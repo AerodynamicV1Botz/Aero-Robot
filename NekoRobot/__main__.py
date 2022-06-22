@@ -82,21 +82,21 @@ def get_readable_time(seconds: int) -> str:
 buttons = [
     [
                         InlineKeyboardButton(
-                            text=f"Add NekoX To Your Group",
-                            url=f"t.me/NekoXRobot?startgroup=true")
+                            text=f"[►➕Add Me To Your Group➕◄]",
+                            url=f"t.me/AeroXRobot?startgroup=true")
                     ],
                    [
                        InlineKeyboardButton(text="[► Help ◄]", callback_data="help_back"),
-                       InlineKeyboardButton(text="❔Chit Chat", url="https://t.me/Besties_XD"),
-                       InlineKeyboardButton(text="[► Repo ◄]", url="https://GitHub.com/Awesome-Prince/NekoRobot-3"),
+                       InlineKeyboardButton(text="[►ChitChat◄]", url="https://t.me/AerodynamicV1_Promotion"),
+                       InlineKeyboardButton(text="[► Repo ◄]", url="https://GitHub.com/AerodynamicV1Botz/Aero-Robot"),
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="🚑 Support",
+                             text="[►Support💬◄]",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                        InlineKeyboardButton(
-                             text="📢 Updates",
-                             url="https://t.me/Koyuki_Updates")
+                             text="[►Update🔔◄]",
+                             url="https://t.me/AerodynamicV1_UPDATE")
                      ], 
     ]
 
@@ -120,12 +120,12 @@ I Use My Powers To Help Admins To Manage Their Groups!
  ❥ /settings:
    ✐ in PM: will send you your settings for all supported modules.
    ✐ in a group: will redirect you to pm, with all that chat's settings.
-For all command use /* [or](https://telegra.ph/file/ab36976c685575c4e1a5f.jpg) *!*
+For all command use /* [or](https://telegra.ph//file/930b78ad0d3629f7047ec.jpg) *!*
 """.format(
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\nKindly use ! for commands if / is not working\n")
 
-HELP_IMG = "https://telegra.ph/file/ab36976c685575c4e1a5f.jpg"
+HELP_IMG = "https://telegra.ph//file/930b78ad0d3629f7047ec.jpg"
 
 
 
@@ -139,7 +139,7 @@ NEKO_IMG = (
       )
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Click here to donate in [Telegram](https://t.me/DarlingPrince)"""
+Click here to donate in [Telegram](https://t.me/1AerodynamicV1_OFFICIAL)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -272,11 +272,11 @@ def start(update: Update, context: CallbackContext):
                 [
                   [                  
                        InlineKeyboardButton(
-                             text="Support🚑",
-                             url=f"https://t.me/Koyuki_Support"),
+                             text="[►Support💬◄]",
+                             url=f"https://t.me/AerodynamicV1_Promotion"),
                        InlineKeyboardButton(
-                             text="Updates🛰️",
-                             url="https://t.me/Koyuki_Updates")
+                             text="[►Update🔔◄]",
+                             url="https://t.me/AerodynamicV1_UPDATE")
                      ] 
                 ]
             ),
@@ -371,10 +371,10 @@ def neko_about_callback(update, context):
     query = update.callback_query
     if query.data == "about_":
         query.message.edit_text(
-            text=f"[◈](https://telegra.ph/file/0719635a2edcbea04be7a.jpg) Hey {escape_markdown(first_name)} Darling,"
+            text=f"[◈](https://telegra.ph//file/930b78ad0d3629f7047ec.jpg) Hey {escape_markdown(first_name)} Dear,"
               f"\n\n ➖➖➖➖➖➖➖➖➖➖➖➖➖"
               f"\n\n Neko Info ➣ :-"
-              f"\n\n ◈ I Am An Anime Themed Advance Group Management Bot With A Lot Of Sexy Features."
+              f"\n\n ◈ I Am An Anime Themed Advance Group Management Bot With A Lot Of Awesome Features."
               f"\n\n ➖➖➖➖➖➖➖➖➖➖➖➖➖"
               f"\n\n ◈ Check The Buttons To Know About Me More.*",
             parse_mode=ParseMode.MARKDOWN,
@@ -383,10 +383,10 @@ def neko_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Master", url="t.me/Awesome-Prince"
+                            text="Developer", url="t.me/AerodynamicV1_OFFICIAL"
                         ),
                         InlineKeyboardButton(
-                            text="Support", url="t.me/Koyuki_Support"
+                            text="[►Support💬◄]", url="t.me/AerodynamicV1_Promotion"
                         ),
                     ],
                     [InlineKeyboardButton(text="Back", callback_data="neko_back")],
@@ -462,7 +462,7 @@ def get_help(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="Click Here", url="https://t.me/NekoXRobot?start=help")
+                  InlineKeyboardButton(text="Click Here", url="https://t.me/AeroXRobot?start=help")
                   ]
                 ]
             ),
@@ -626,7 +626,7 @@ def donate(update: Update, context: CallbackContext):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True)
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 1484735126 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -670,7 +670,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[Iam Alive!](https://telegra.ph/file/4533d130b73a7dd20b83d.jpg)", parse_mode=ParseMode.MARKDOWN,
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[Iam Alive!](https://telegra.ph//file/930b78ad0d3629f7047ec.jpg)", parse_mode=ParseMode.MARKDOWN,
 
             reply_markup=InlineKeyboardMarkup(
 
@@ -682,7 +682,7 @@ def main():
 
                              text="[► Summon Me ◄]",
 
-                             url=f"t.me/NekoXRobot?startgroup=true"),
+                             url=f"t.me/AeroXRobot?startgroup=true"),
 
 
                      ] 
