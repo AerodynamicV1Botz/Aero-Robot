@@ -52,7 +52,7 @@ from NekoRobot.modules.helper_funcs.extraction import extract_user
 from NekoRobot import telethn
 from NekoRobot import pbot
 
-NEKO_IMG = "https://telegra.ph/file/a21731c0c4c7f27a3ec16.jpg"
+NEKO_IMG = "https://telegra.ph//file/930b78ad0d3629f7047ec.jpg"
 
 
 def no_by_per(totalhp, percentage):
@@ -473,15 +473,15 @@ def stats(update, context):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/Koyuki_Updates)\n\n"
-            + "\n╘══「 by [Koyūki Network](https://t.me/Koyuki_Network) 」\n",
+            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/AerodynamicV1_UPDATE)\n\n"
+            + "\n╘══「 by [AerodynamicV1~🇮🇳](https://t.me/AerodynamicV1_OFFICIAL) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [                  
                        InlineKeyboardButton(
                              text="Repo",
-                             url="github.com/Awesome-Prince/NekoRobot-2")
+                             url="github.com/AerodynamicV1Botz/Aero-Robot")
                      ] 
                 ]
             ),
@@ -494,9 +494,9 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/Koyuki_Updates)\n\n"
+                    + f"\n\n[✦Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/AerodynamicV1_UPDATE)\n\n"
                 )
-                + "╘══「 by [Koyūki Network](https://t.me/Koyuki_Network) 」\n"
+                + "╘══「 by [AerodynamicV1~🇮🇳](https://t.me/AerodynamicV1_OFFICIAL) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
@@ -504,7 +504,7 @@ def stats(update, context):
                   [                  
                        InlineKeyboardButton(
                              text="Repo",
-                             url="github.com/Awesome-Prince/NekoRobot-2")
+                             url="github.com/AerodynamicV1Botz/AeroXRobot")
                      ] 
                 ]
             ),
