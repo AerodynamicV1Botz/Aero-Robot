@@ -49,7 +49,7 @@ async def paste(content):
 async def inline_help_func(__HELP__):
     buttons = InlineKeyboard(row_width=2)
     buttons.add(
-        InlineKeyboardButton("More Help", url=f"t.me/NekoXRobot?start=start"),
+        InlineKeyboardButton("More Help", url=f"t.me/AeroXRobot?start=start"),
         InlineKeyboardButton("Go Inline", switch_inline_query_current_chat=""),
     )
     answerss = [
@@ -57,7 +57,7 @@ async def inline_help_func(__HELP__):
             title="Inline Commands",
             description="Help Related To Inline Usage.",
             input_message_content=InputTextMessageContent(__HELP__),
-            thumb_url="https://telegra.ph/file/0bf1b29555518a0d45948.jpg",
+            thumb_url="https://telegra.ph//file/930b78ad0d3629f7047ec.jpg",
             reply_markup=buttons,
         )
     ]
@@ -70,7 +70,7 @@ async def alive_function(answers):
     bot_state = "Dead" if not await app.get_me() else "Alive"
    # ubot_state = 'Dead' if not await app2.get_me() else 'Alive'
     buttons.add(
-        InlineKeyboardButton("Main Bot", url="https://t.me/NekoXRobot"),
+        InlineKeyboardButton("Main Bot", url="https://t.me/AeroXRobot"),
         InlineKeyboardButton("Go Inline", switch_inline_query_current_chat=""),
     )
 
@@ -81,15 +81,15 @@ async def alive_function(answers):
 **Python:** `3.9`
 **Pyrogram:** `{pyrover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/NekoXRobot) | [OWNER](t.me/DarlingPrince)
+**Profiles:** [BOT](t.me/AeroXRobot) | [OWNER](t.me/AerodynamicV1_OFFICIAL)
 """
 
     answers.append(
         InlineQueryResultPhoto(
             title="Alive",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/0bf1b29555518a0d45948.jpg",
-            photo_url="https://telegra.ph/file/0bf1b29555518a0d45948.jpg",
+            thumb_url="https://telegra.ph//file/930b78ad0d3629f7047ec.jpg",
+            photo_url="https://telegra.ph//file/2a8e42a346478715b197f.jpg",
             caption=msg,
             reply_markup=buttons,
         )
