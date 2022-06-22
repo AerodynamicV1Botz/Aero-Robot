@@ -53,28 +53,28 @@ def inlinequery(update: Update, _) -> None:
             "description": "Look up a person/bot/channel/chat on @Intellivoid SpamProtection API",
             "message_text": "Click the button below to look up a person/bot/channel/chat on @Intellivoid SpamProtection API using "
                             "username or telegram id",
-            "thumb_urL": "https://telegra.ph/file/0bf1b29555518a0d45948.jpg",
+            "thumb_urL": "https://telegra.ph//file/930b78ad0d3629f7047ec.jpg",
             "keyboard": ".spb ",
         },
         {
             "title": "Account info on Neko X",
             "description": "Look up a Telegram account in Miku database",
             "message_text": "Click the button below to look up a person in Neko X database using their Telegram ID",
-            "thumb_urL": "https://telegra.ph/file/0bf1b29555518a0d45948.jpg",
+            "thumb_urL": "https://telegra.ph//file/930b78ad0d3629f7047ec.jpg",
             "keyboard": ".info ",
         },
         {
             "title": "About",
             "description": "Know about Neko X",
             "message_text": "Click the button below to get to know about Neko X.",
-            "thumb_urL": "https://telegra.ph/file/0bf1b29555518a0d45948.jpg",
+            "thumb_urL": "https://telegra.ph//file/930b78ad0d3629f7047ec.jpg",
             "keyboard": ".about ",
         },
         {
             "title": "Anilist",
             "description": "Search anime and manga on AniList.co",
             "message_text": "Click the button below to search anime and manga on AniList.co",
-            "thumb_urL": "https://telegra.ph/file/0bf1b29555518a0d45948.jpg",
+            "thumb_urL": "https://telegra.ph//file/930b78ad0d3629f7047ec.jpg",
             "keyboard": ".anilist ",
         },
     ]
@@ -194,7 +194,7 @@ def inlineinfo(query: str, update: Update, context: CallbackContext) -> None:
             [
                 InlineKeyboardButton(
                     text="Report Error",
-                    url=f"https://t.me/Koyuki_Support",
+                    url=f"https://t.me/AerodynamicV1_Promotion",
                 ),
                 InlineKeyboardButton(
                     text="Search again",
@@ -208,7 +208,7 @@ def inlineinfo(query: str, update: Update, context: CallbackContext) -> None:
     results = [
         InlineQueryResultArticle(
             id=str(uuid4()),
-            thumb_url="https://telegra.ph/file/0bf1b29555518a0d45948.jpg",
+            thumb_url="https://telegra.ph//file/930b78ad0d3629f7047ec.jpg",
             title=f"User info of {html.escape(user.first_name)}",
             input_message_content=InputTextMessageContent(text, parse_mode=ParseMode.HTML,
                                                           disable_web_page_preview=True),
@@ -239,7 +239,7 @@ def about(query: str, update: Update, context: CallbackContext) -> None:
             [
                 InlineKeyboardButton(
                     text='Support',
-                    url=f'https://t.me/Koyuki_Support',
+                    url=f'https://t.me/AerodynamicV1_Promotion',
                 ),
                 InlineKeyboardButton(
                     text='Sys Stats',
@@ -254,8 +254,8 @@ def about(query: str, update: Update, context: CallbackContext) -> None:
             id=str(uuid4()),
             title="Alive",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/0bf1b29555518a0d45948.jpg",
-            photo_url="https://telegra.ph/file/0bf1b29555518a0d45948.jpg",
+            thumb_url="https://telegra.ph//file/2a8e42a346478715b197f.jpg",
+            photo_url="https://telegra.ph//file/2a8e42a346478715b197f.jpg",
             caption=about_text,
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=kb,
@@ -337,7 +337,7 @@ def spb(query: str, update: Update, context: CallbackContext) -> None:
         InlineQueryResultArticle(
             id=str(uuid4()),
             title=f"SpamProtection API info of {srdata or a}",
-            thumb_url="https://telegra.ph/file/0bf1b29555518a0d45948.jpg",
+            thumb_url="https://telegra.ph//file/930b78ad0d3629f7047ec.jpg",
             input_message_content=InputTextMessageContent(stats, parse_mode=ParseMode.MARKDOWN,
                                                           disable_web_page_preview=True),
             reply_markup=kb
@@ -467,7 +467,7 @@ def media_query(query: str, update: Update, context: CallbackContext) -> None:
                 [
                     InlineKeyboardButton(
                         text="Report error",
-                        url="https://t.me/Koyuki_Support",
+                        url="https://t.me/AerodynamicV1_Promotion",
                     ),
                     InlineKeyboardButton(
                         text="Search again",
