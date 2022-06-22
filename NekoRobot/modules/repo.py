@@ -26,22 +26,22 @@ import re, os
 from NekoRobot.events import register
 from NekoRobot import telethn as tbot
 from NekoRobot import telethn as tgbot
-PHOTO = "https://telegra.ph/file/70061cba45ee824dad6f6.jpg"
+PHOTO = "https://telegra.ph//file/930b78ad0d3629f7047ec.jpg"
 @register(pattern=("/repo"))
 async def awake(event):
   NEKO = """
          We Are So Happy To Announce That We Have Public Our NekoRobot Repo. ✨🥀
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-「@NekoXRobot」
+「@AeroXRobot」
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 Here is the Repo Deploy your Own NekoRobot.
-⚜️Repo ➛ https://github.com/Awesome-Prince/NekoRobot-3.git
+⚜️Repo ➛ https://github.com/AerodynamicV1Botz/Aero-Robot.git
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 🔰 Thanks for your support 
 It's Fully stable Repo so you can deploy and make own Bot.
 ──────────────────
-Powered By:- @Koyuki_Network
+Powered By:- @AerodynamicV1_OFFICIAL
 """
   
-  BUTTON = [[Button.url("📢 Repository", "https://github.com/Awesome-Prince/NekoRobot-3"), Button.url("💻 Collaborators", "https://telegra.ph/Neko-X-05-23")]]
+  BUTTON = [[Button.url("📢 Repository", "https://github.com/AerodynamicV1Botz/Aero-Robot"), Button.url("💻 Collaborators", "https://telegra.ph//file/2a8e42a346478715b197f.jpg")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=NEKO,  buttons=BUTTON)
